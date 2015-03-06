@@ -11,7 +11,7 @@ CREATE  TABLE IF NOT EXISTS `user_role` (
 
 CREATE  TABLE IF NOT EXISTS `user_role_linker` (
   `user_id` INT(11) UNSIGNED NOT NULL,
-  `role_id` INT(11) NOT NULL,
+  `role_id` VARCHAR(255) NOT NULL,
   PRIMARY KEY (`user_id`, `role_id`),
   INDEX `idx_role_id` (`role_id` ASC),
   INDEX `idx_user_id` (`user_id` ASC),
